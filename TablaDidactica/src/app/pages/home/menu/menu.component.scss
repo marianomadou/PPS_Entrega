@@ -1,0 +1,54 @@
+ion-button {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0;
+}
+
+.animals {
+  background-color: rgb(0, 255, 136);
+  background-image: url("../../../../assets/images/svg/animals.svg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top 10px bottom 10px;
+  background-size: contain;
+}
+
+.colors {
+    background-color: orange;
+    background-image: url("../../../../assets/images/svg/pantone.svg") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+.numbers {
+  background-color: rgb(24, 180, 228);
+  //background-position: top 10px bottom 10px;
+  background-image: url("../../../../assets/images/png/numbers.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+
+ion-grid {
+  height: 100%;
+  margin: 0 !important;
+  padding: 0;
+}
+
+ion-row {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+ion-col {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}

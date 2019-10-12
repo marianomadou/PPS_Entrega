@@ -1,0 +1,23 @@
+<app-header titulo="Tabla didáctica de idiomas" [backButton]="true"></app-header>
+<ion-content>
+  <ion-grid fixed>
+    <ion-row class="outlet">
+      <ion-col size="12">
+        <ion-router-outlet></ion-router-outlet>
+      </ion-col>
+    </ion-row>
+    <ion-row class="footer">
+      <ion-col size="12">
+        <ion-segment mode="ios" (ionChange)="languageChanged($event)" [(ngModel)]="this.language">
+          <ion-segment-button class="english" [ngClass]="{'desactivado': this.language !== 'English'}" value="English">
+          </ion-segment-button>
+          <ion-segment-button class="spanish" [ngClass]="{'desactivado': this.language !== 'Spanish'}" value="Spanish">
+          </ion-segment-button>
+          <ion-segment-button class="portugues" [ngClass]="{'desactivado': this.language !== 'Portugues'}" value="Portugues">
+            </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

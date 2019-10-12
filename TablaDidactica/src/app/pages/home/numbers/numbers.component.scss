@@ -1,0 +1,100 @@
+ion-button {     
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important; 
+    padding: 0 !important;
+    border: 0;
+    
+}
+
+.one {
+    background-color: #fffb00;
+    background-image: url('../../../../assets/images/png/1.png') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+    
+}
+
+.two {
+    background-color: #3880ff;
+    background-image: url('../../../../assets/images/png/2.png') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.three {
+    background-color: white;
+    background-image: url('../../../../assets/images/png/3.png') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.four {
+    background-color: #7cc6ce;
+    background-image: url('../../../../assets/images/png/4.png') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.five {
+    background-color:#f06e03;
+    background-image: url('../../../../assets/images/png/5.png') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.six {
+    background-color: black;
+    background-image: url('../../../../assets/images/png/6.png') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.seven {
+    background-color: #f04141;
+    background-image: url('../../../../assets/images/png/7.png') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.eight {
+    background-color: #10dc60;
+    background-image: url('../../../../assets/images/png/8.png') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.nine {
+    background-color:#7044ff;
+    background-image: url('../../../../assets/images/png/9.png') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+ion-grid{
+    height: 100%;
+    margin: 0 !important; 
+    padding: 0;
+}
+
+ion-row{    
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0;    
+    padding: 0;
+}
+
+ion-col{
+    width: 100% !important;
+    margin: 0;    
+    padding: 0;
+} 

@@ -1,0 +1,102 @@
+ion-button {     
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important; 
+    padding: 0 !important;
+    border: 0;
+    
+}
+
+.pig {
+    background-color: #3880ff;
+    background-image: url('../../../../assets/images/svg/pig.svg') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.cat {
+    background-color: #f4f5f8;
+    background-image: url('../../../../assets/images/svg/cat.svg') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+    border: 0;
+}
+
+.giraffe {
+    background-color: #7044ff;
+    background-image: url('../../../../assets/images/svg/giraffe.svg') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.lion {
+    background-color: #10dc60;
+    background-image: url('../../../../assets/images/svg/lion.svg') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.monkey {
+    background-color: #222428;
+    background-image: url('../../../../assets/images/svg/monkey.svg') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.panda {
+    background-color: #f04141;
+    background-image: url('../../../../assets/images/svg/panda.svg') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.dog {
+    background-color: #0cd1e8;
+    background-image: url('../../../../assets/images/svg/dog.svg') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.frog {
+    background-color: #989aa2;
+    background-image: url('../../../../assets/images/svg/frog.svg') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.tiger {
+    background-color: #ffce00;
+    background-image: url('../../../../assets/images/svg/tiger.svg') !important;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+
+
+ion-grid{
+    height: 100%;
+    margin: 0 !important; 
+    padding: 0;
+}
+
+ion-row{    
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0;    
+    padding: 0;
+}
+
+ion-col{
+    width: 100% !important;
+    margin: 0;    
+    padding: 0;
+}

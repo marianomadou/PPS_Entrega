@@ -1,0 +1,25 @@
+<app-header [titulo]="title" [backButton]="true"></app-header>
+
+
+<ion-content padding>
+    
+   
+        <div class="chart-container" [ngClass]="{ocultar: this.router.url == '/list/cosasLindas/stats'}">
+          <canvas  id="barChart" width="400" height="400"></canvas>
+        </div>
+        <div class="chart-container" [ngClass]="{ocultar: this.router.url == '/list/cosasFeas/stats'}">
+          <canvas id="pieChart" width="400" height="400"></canvas>
+        </div>
+
+        <!--
+        <ion-col size="6" size-md="4" size-lg="3" *ngFor="let image of allPhotos; let i = index"
+            [attr.data-index]="i">
+            <div class="image-container" [ngStyle]="{'background-image': 'url(' + image.image + ')'}"
+              (click)="openGallery(i, galleryType)">
+            </div>
+          </ion-col>-->
+    
+    
+    
+</ion-content>
+
