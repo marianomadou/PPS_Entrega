@@ -18,6 +18,10 @@ ion-segment-button {
     --indicator-color-checked: #388b00; 
 }
 
+ion-segment { 
+    --background: #363636; 
+}
+
 .chart-container{
     margin-top: 5%;
     min-height: 370px !important;

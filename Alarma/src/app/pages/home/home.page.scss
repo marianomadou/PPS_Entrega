@@ -1,0 +1,52 @@
+ion-button{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    height: 100%; 
+    width: 100%;
+    margin: 0;
+    padding: 0;    
+}
+
+.botonActivarAlarma{
+    background-image: url(../../../assets/images/green_button.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 86%;
+    //width: 100% !important;
+}
+
+.botonDesactivarAlarma{
+    background-image: url(../../../assets/images/red_button.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 86%;
+    //width: 100% !important;
+}
+
+.alarmIcon {
+    font-size: 300px;
+}
+
+
+   
+
+ion-grid{
+    height: 100%;
+    width: 100%;
+    margin: 0 !important; 
+    padding: 0;
+}
+
+ion-row{
+    height: 100%;
+    width: 100%;
+    margin: 0;    
+    padding: 0;
+}
+
+ion-col{
+    width: 100%;
+    margin: 0;    
+    padding: 0;
+}

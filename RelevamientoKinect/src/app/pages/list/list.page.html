@@ -1,29 +1,10 @@
 <app-header [titulo]="title" [backButton]="true"></app-header>
 
 
-<ion-content padding>
-  <div [ngStyle]="{'background-color':this.title === 'Cosas Lindas' ? 'white' : 'black' }">
+<ion-content padding color="dark">
+  <div [ngStyle]="{'background-color':this.title === 'Cosas Lindas' ? 'dark' : 'dark' }">
 
-
-    <ion-segment [(ngModel)]="galleryType">
-      <ion-segment-button value="allPhotos">
-        <ion-label>
-          <ion-icon size="large" name="people"></ion-icon>
-          <ion-text>
-            <h2> Todas las fotos</h2>
-          </ion-text>
-        </ion-label>
-      </ion-segment-button>
-      <ion-segment-button value="myPhotos">
-        <ion-label>
-          <ion-icon size="large" name="contact"></ion-icon>
-          <ion-text>
-            <h2> Mis fotografías</h2>
-          </ion-text>
-        </ion-label>
-      </ion-segment-button>
-    </ion-segment>
-
+ 
 
 
     <div [ngSwitch]="galleryType">
@@ -49,31 +30,50 @@
     </div>
 
 
-    <ion-button size="default" horizontal="center" vertical="end" expand="full" [routerLink]="this.urlStats">
-        <ion-icon size="large" name="stats"></ion-icon><ion-text><h3> Estadísticas</h3></ion-text>
-      </ion-button>
 
   </div>
 
- 
 
-  <!--
-  <ion-button size="default" expand="full">Estadísticas
-    <a [routerLink]="this.urlStats"></a>
-  </ion-button>-->
+
+  <ion-fab vertical="bottom"  horizontal="center" slot="fixed">
+    <ion-fab-button color="danger">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button >
+    <ion-fab-list size="large" side="start">
+      <ion-fab-button color="warning" (click)="elegirFoto()">
+        <ion-icon size="large" name="images"></ion-icon>
+      </ion-fab-button >
+      <ion-fab-button color="warning" size="large" (click)="tomarFoto()">
+        <ion-icon size="large" name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button  color="success" size="large" [routerLink]="this.urlStats">
+        <ion-icon size="large" name="stats"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 
 </ion-content>
 
-<ion-fab vertical="bottom" horizontal="end" slot="fixed">
-  <ion-fab-button>
-    <ion-icon name="add"></ion-icon>
-  </ion-fab-button>
-  <ion-fab-list side="start">
-    <ion-fab-button (click)="elegirFoto()">
-      <ion-icon name="images"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-button (click)="tomarFoto()">
-      <ion-icon name="camera"></ion-icon>
-    </ion-fab-button>
-  </ion-fab-list>
-</ion-fab>
+<ion-footer color="dark">
+  <ion-segment [(ngModel)]="galleryType" >
+    <ion-segment-button value="allPhotos" >
+      <ion-label>
+        <ion-icon size="large" name="people"></ion-icon>
+        <ion-text>
+          <h2> Todas las fotos</h2>
+        </ion-text>
+      </ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="myPhotos" >
+      <ion-label>
+        <ion-icon size="large" name="contact"></ion-icon>
+        <ion-text>
+          <h2> Mis fotografías</h2>
+        </ion-text>
+      </ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-footer>
+
