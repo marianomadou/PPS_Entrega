@@ -1,0 +1,100 @@
+<ion-content padding color="dark">
+    <h2 style="color:aliceblue">Carga de Producto</h2>
+    <div class="ion-text-center">
+        <ion-avatar class="mb-3" size="large" style="align-self: center; margin: auto; height: 200px; width: 200px;">
+            <img class="icon" *ngIf="!foto" src="../../../assets/images/nofoto.jpg" alt="">
+            <img class="icon" *ngIf="foto" [src]="foto" alt="">
+        </ion-avatar>
+    </div>
+    <form style="margin-top: 40px;" [formGroup]="form" (ngSubmit)="onSubmitProducto()">
+        <ion-item color="light">
+            <ion-icon name="beer" slot="start"></ion-icon>
+            <ion-label position="floating"></ion-label>
+            <ion-input formControlName="nombreProducto" maxlength="15" name="nombreProducto" type="text" placeholder="Nombre del Producto"></ion-input>
+        </ion-item>
+        <ng-container *ngFor="let validation of validation_messages.nombreProducto">
+            <div *ngIf="form.get('nombreProducto').hasError(validation.type) && (form.get('nombreProducto').dirty || form.get('nombreProducto').touched)">
+                {{ validation.message }}
+            </div>
+        </ng-container>
+        <ion-item color="light">
+            <ion-icon name="pizza" slot="start"></ion-icon>
+            <ion-label position="floating"></ion-label>
+            <ion-input formControlName="descripcion" maxlength="100" name="descripcion" type="text" placeholder="Descripcion"></ion-input>
+        </ion-item>
+        <ng-container *ngFor="let validation of validation_messages.descripcion">
+            <div *ngIf="form.get('descripcion').hasError(validation.type) && (form.get('descripcion').dirty || form.get('descripcion').touched)">
+                {{ validation.message }}
+            </div>
+        </ng-container>
+        <ion-item color="light">
+            <ion-icon name="beer" slot="start"></ion-icon>
+            <ion-label position="floating"></ion-label>
+            <ion-input formControlName="stock" name="stock" type="number" placeholder="Stock"></ion-input>
+        </ion-item>
+        <ng-container *ngFor="let validation of validation_messages.stock">
+            <div *ngIf="form.get('stock').hasError(validation.type) && (form.get('stock').dirty || form.get('stock').touched)">
+                {{ validation.message }}
+            </div>
+        </ng-container>
+        <ion-item color="light">
+            <ion-icon name="logo-usd" slot="start"></ion-icon>
+            <ion-label position="floating"></ion-label>
+            <ion-input formControlName="precio" name="precio" type="number" placeholder="Precio"></ion-input>
+        </ion-item>
+        <ng-container *ngFor="let validation of validation_messages.precio">
+            <div *ngIf="form.get('precio').hasError(validation.type) && (form.get('precio').dirty || form.get('precio').touched)">
+                {{ validation.message }}
+            </div>
+        </ng-container>
+        <ion-item>
+            <ion-icon name="logo-usd" slot="start"></ion-icon>
+            <ion-select (ionChange)="setTipo($event.target.value)" placeholder="Seleccione tipo de Productos: ">
+                <ion-select-option value="postre">Postre</ion-select-option>
+                <ion-select-option value="cocina">Comida</ion-select-option>
+                <ion-select-option value="cerveza">Cerveza</ion-select-option>
+                <ion-select-option value="barra">Trago/Vino</ion-select-option>
+            </ion-select>
+        </ion-item>
+
+        <hr>
+
+        <ion-button color="secondary" expand="block" type="submit" [disabled]="!form.valid" *ngIf="nuevo=='true'">
+            Ingresar Nuevo Producto
+        </ion-button>
+        <ion-button color="danger" expand="block" (click)="modificar()" [disabled]="!form.valid" *ngIf="nuevo=='false'">
+            Modificar Producto
+        </ion-button>
+        <ion-button color="primary" expand="block" (click)="eliminar()" [disabled]="!form.valid" *ngIf="nuevo=='false'">
+            Eliminar Producto
+        </ion-button>
+
+
+        <br>
+
+    </form>
+
+
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+        <ion-fab-button color="danger">
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list size="large" side="start">
+            <ion-fab-button color="success">
+                <ion-icon size="large" name="camera" (click)="tomarFoto()"></ion-icon>
+            </ion-fab-button>
+
+            <ion-fab-button color="secondary">
+                <input type="file" e="archivo" id="archivo" (change)="detectFiles($event)">
+            </ion-fab-button>
+        </ion-fab-list>
+        <ion-fab-list size="large" side="end">
+            <ion-fab-button color="warning">
+                limpiar
+            </ion-fab-button>
+        </ion-fab-list>
+
+    </ion-fab>
+
+
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-content [scrollEvents]="true">
+    <ion-list style="height: 93vh; overflow-y: auto;" color="dark">
+        <ion-list-header color="dark">Listado de Mesas</ion-list-header>
+        <ion-item *ngFor="let mesa of mesas">
+            <ion-thumbnail slot="start">
+                <img src="{{mesa.url}}">
+            </ion-thumbnail>
+            <ion-label>
+                <h3>Mesa Nº {{mesa.numero}}
+                </h3>
+                <p style="margin-top: 5px; margin-bottom: 5px;">
+                    <ion-badge appColoresEstadoMesa [estado]="mesa.estado" style="font-size:9pt; padding: 2px;"> {{mesa.estado}}</ion-badge>
+                </p>
+
+                <p>Comensales: {{mesa.cantidadComensales}} </p>
+                <p>cliente: {{mesa.cliente}} </p>
+
+                <ion-button *ngIf="mesa.estado=='solicitada'" size="small" (click)="confirmarReserva(mesa)">Confirmar Reserva </ion-button>
+                <ion-button *ngIf="mesa.estado=='solicitada'" size="small" (click)="cerrarMesa(mesa, 'cerrada')"> No aceptar Solicitud </ion-button>
+                <ion-button *ngIf="mesa.estado=='reservada'" size="small" (click)="confirmarServicio(mesa)">Confirmar inicio del servicio
+                </ion-button>
+                <ion-button *ngIf="mesa.estado=='cuentaPedida'" size="small" (click)="emitirFactura(mesa)">Emitir Factura
+                </ion-button>
+                <!--  <ion-button *ngIf="mesa.estado=='pagando'" size="small" (click)="cerrarMesa(mesa, 'cerrada')"> Cerrar</ion-button> -->
+                <ion-button *ngIf="mesa.estado=='pagoEnviado'" size="small" (click)="cerrarMesa(mesa, 'cerrada')"> Cerrar</ion-button>
+                <ion-button *ngIf="mesa.estado=='cerrada'" size="small" (click)="limpiarUnaMesa(mesa)">Limpiar</ion-button>
+                <ion-button color="secondary" (click)=" enviarProducto(mesa)" *ngIf="mesa.estado=='disponible'" size="small">Editar</ion-button>
+                <app-botones-enviar-pedido-areas [mesa]="mesa"></app-botones-enviar-pedido-areas>
+                <ion-button size="small" *ngIf="mesa.estado=='pedidoListo'" size="small" (click)="entregarPedido(mesa)">Entregar Pedido
+                </ion-button>
+
+
+            </ion-label>
+        </ion-item>
+    </ion-list>
+
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-content>
+    <ion-list style="height: 75vh; overflow-y: auto;" color="dark">
+        <ion-list-header color="dark" *ngIf="admin=='cliente'">Elegi tu Menù</ion-list-header>
+        <ion-list-header color="dark" *ngIf="admin=='admin'">Modificar Productos</ion-list-header>
+        <ion-item *ngFor="let producto of productos">
+            <ion-thumbnail slot="start">
+                <img src="{{producto.url}}">
+            </ion-thumbnail>
+            <ion-label>
+                <ion-badge appColoresEstadoMesa [estado]="producto.tipo " style="font-size:9pt; padding: 2px;"> {{producto.tipo | areasPipe}}</ion-badge>
+                <h3>{{producto.nombre}}</h3>
+                <p style="font-size: 9pt;">{{producto.descripcion}} </p>
+
+            </ion-label>
+            <ion-button color="danger" (click)="elegir(producto)" *ngIf="admin=='cliente'"><span style="font-size: 11pt; font-weight: bolder;">$ {{producto.precio}} </span></ion-button>
+            <ion-button color="secondary" (click)=" enviarProducto(producto)" *ngIf="admin=='admin'">Editar</ion-button>
+        </ion-item>
+    </ion-list>
+    <ion-footer style="height: 10vh" *ngIf="admin=='cliente'">
+        <ion-toolbar>
+            <ion-button color="danger" style="width: 98%" (click)="enviarPedido()">Terminar Pedido ( <span style="font-size: 11pt; font-weight: bolder;">${{acumuladorProductos}} )</span></ion-button>
+        </ion-toolbar>
+    </ion-footer>
+</ion-content>

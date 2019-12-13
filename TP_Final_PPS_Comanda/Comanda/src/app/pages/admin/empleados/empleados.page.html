@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            RRHH
+        </ion-title>
+
+        <ion-button *ngIf="botonera" slot="end" color="light" routerLink="/admin">
+            <ion-icon name="arrow-back"> </ion-icon> Admin
+        </ion-button>
+        <ion-button *ngIf="!botonera" slot="end" color="light" (click)=" volver()">
+            <ion-icon *ngIf="!botonera" name="arrow-back">RRHH</ion-icon>
+        </ion-button>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="botonera">
+    <div class="unGranDiv" style="height: 90vh;">
+        <ion-row style="height:50%; ">
+            <ion-col class="col-12" style="height:98%; background-color: rgb(0, 0, 0); color: seashell;  " (click)="cambiarPerfilUsu()">
+                <h1 style="font-family: 'Raleway', sans-serif; font-size: 32pt; font-weight: 800;">EMPLEADOS</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="height:50%; ">
+            <ion-col class="col-12" style="height:98%; background-color: rgb(255, 0, 0); color: seashell;  " (click)=" cliente()">
+                <h1 style="font-family: 'Raleway', sans-serif; font-size: 32pt; font-weight: 800;">CLIENTES</h1>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>
+
+<ion-content *ngIf="adminPerfilUser">
+    <app-listado-empleados (usuarioElegido)="editarUsu($event)"></app-listado-empleados>
+</ion-content>
+<ion-content *ngIf="editarUsuario">
+    <app-adm-perfil-usuario [usuario]="usuarioElegido"></app-adm-perfil-usuario>
+</ion-content>
+
+<ion-content *ngIf="autorizarCliente">
+    <app-listado-clientes></app-listado-clientes>
+</ion-content>
