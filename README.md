@@ -28,7 +28,7 @@ Vibraciones al detectarse un error.
 * El listado de mensajes muestra el usuario que lo generó (al estilo Whatsapp). 
 * Los mensajes no pueden tener más de 21 caracteres. Mostrar la fecha y el autor del mensaje. Si el autor del mensaje soy yo, NO mostrar el nombre. Los mensajes propios se alinearán a la derecha, los demás, a la izquierda. 
 
-![Conversando en el aula](https://github.com/marianomadou/PPS_Entrega/blob/master/documentacion/print_alarma.jpg)
+![Conversando en el aula](https://github.com/marianomadou/PPS_Entrega/blob/master/documentacion/print_conversando.jpg)
 
 ### 2.- Tabla didáctica de idiomas para niños (5 años): 
 * Ingresar un usuario. (registrado en BD) 
