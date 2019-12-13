@@ -1,0 +1,90 @@
+.ion-buttonFull{
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 100%;
+  min-height: 45vh !important; 
+  min-width: 100% !important;
+  margin: 0;
+  padding: 2px;
+  background-color: rgb(49, 99, 3) !important;
+  background-image: url('../../assets/img/chat.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important; 
+  background-size: 90% !important;
+  .description{
+    color: rgb(205, 255, 163);
+    font-weight: bolder;
+    font-size: 80%;
+  }
+  border-radius: 10px;
+}
+
+.ion-avatar{
+  margin: auto;
+}
+
+.ion-buttonFull2{
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 100%;
+  min-height: 45vh !important; 
+  min-width: 100% !important;
+  margin: 0;
+  padding: 2px;
+  background-color: rgb(110, 8, 8) !important;
+  background-image: url('../../assets/img/speech-bubble.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important; 
+  background-size: 90% !important;
+  .description{
+    color: rgb(245, 179, 179);
+    font-weight: bolder;
+    font-size: 80%;
+  }
+}
+
+
+
+
+ion-grid{
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0;
+}
+
+
+.ion-item {
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0;
+}
+ion-row{
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+ion-col{
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0;
+}
+.ion-content {
+  margin: 0 !important;
+  align-content: center;
+}
+
+.ion-list {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+.ion-img {
+  height: 100% !important;
+  width: 100% !important;
+  margin: auto;
+  padding: 0;
+}

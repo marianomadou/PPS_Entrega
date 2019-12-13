@@ -1,0 +1,99 @@
+.splash{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background: rgba(255,255,255,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgb(0, 0, 0) 0%, rgb(219, 94, 2) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgb(0, 0, 0)), color-stop(100%, rgb(219, 94, 2)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgb(0, 0, 0) 0%, rgb(219, 94, 2) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgb(0, 0, 0) 0%, rgb(219, 94, 2) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgb(0, 0, 0) 0%, rgb(219, 94, 2) 100%);
+  background: radial-gradient(ellipse at center, rgb(0, 0, 0) 0%, rgb(219, 94, 2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffb700', GradientType=1 );
+         
+}
+
+.spinner {
+  background-image: url(../assets/icon/icon.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  display: block;
+  width: 150px;
+  height: 150px;  
+  background-size: cover; 
+  }
+
+  .spinnerInterceptor {  
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+      img {
+        display: block;
+        height: 26%;
+        margin-top: -3%;
+      }
+      /*color: whitesmoke;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;*/
+   }
+  
+   .texto {
+      color: whitesmoke;
+      text-align: center;
+   }
+  
+   .titulo {
+      position: fixed;
+      top: 30px;
+      font-weight: bold;
+      font-size: 2.5rem;    
+      font-family: "Arial Black", Gadget, sans-serif;
+      font-style: oblique;
+      background-color:  rgb(219, 94, 2);
+   }
+  
+  .dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: rgb(219, 94, 2);
+    border-radius: 100%;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+  @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }

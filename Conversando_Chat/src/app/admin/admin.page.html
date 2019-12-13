@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Administración</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button size="large" routerLink="/"> Home</ion-button>
+
+  <!--<img src="../../assets/img/jonhy.png"/>-->
+  <ion-row justify-content-center align-items-center style="height: 80%">
+    <iframe *ngFor="let i of arrayDeVideos" width="80%" height="315" [src]="i.trustedVideoUrl" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      
+    </iframe>
+      
+    <ion-item-divider color="dark"></ion-item-divider>
+    
+  </ion-row>
+  
+</ion-content>

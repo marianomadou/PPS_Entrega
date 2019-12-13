@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title >
+      App Login Ionic 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button size="large" color="danger" (click)="onLogout()">Desloguearse</ion-button>
+  <ion-button size="large" routerLink="/chat">Chat</ion-button>
+  <ion-button size="large" routerLink="/admin">Admin</ion-button>
+
+  <div id="contenido" >
+
+    <div class="container mt-5">
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Bienvenido <div id="name"></div></strong> Usted se ha logueado correctamente al sistema.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,51 @@
+<ion-header color="Success">
+  <ion-toolbar color="Success">
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="onlogout()">
+        <ion-icon class="icon" name="exit"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Conversando en el aula
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid fixed style="height: 98vh;">
+    <ion-row style="height: 48%;">
+      <ion-col *ngFor="let chat of chatRooms" size="12">
+
+
+
+        <ion-item (click)="openChat(chat)">
+
+          <ion-button
+            [ngClass]="{'ion-buttonFull': chat.name == 'Sala de Chat Alumnos', 'ion-buttonFull2': chat.name != 'Sala de Chat Alumnos'}"
+            fill="clear" expand="full">
+            <ion-label>
+              <h2> <b>{{chat.name}}</b> </h2>
+              <p class="description">{{chat.description}}</p>
+
+             <!-- <ion-avatar style="margin-left: 40%;">
+                <ion-img [src]="chat.image"></ion-img>
+              </ion-avatar>-->
+
+            </ion-label>
+          </ion-button>
+
+        </ion-item>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>
