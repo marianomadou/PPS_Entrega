@@ -22,16 +22,26 @@ Sonido al cerrar la sesión.
 Vibraciones al detectarse un error. 
 
 ### 1.- Conversando en el aula (testeado en más de un dispositivo): 
-Ingresar un usuario. (registrado en BD) La aplicación mostrará dos botones (con colores e imágenes que los distinga) y el texto PPS-4A y PPS-4B, respectivamente. 
-Los botones deben de ocupar toda la pantalla (TODA LA PANTALLA). Una vez seleccionada el aula (respetar el mismo color del botón de ingreso), se tendrá un cuadro de texto y un botón para ingresar un mensaje. El listado de mensajes muestra el usuario que lo generó (al estilo Whatsapp). Los mensajes no pueden tener más de 21 caracteres. Mostrar la fecha y el autor del mensaje. Si el autor del mensaje soy yo, NO mostrar el nombre. Los mensajes propios se alinearán a la derecha, los demás, a la izquierda. 
+* Ingresar un usuario. (registrado en BD) 
+* La aplicación mostrará dos botones (con colores e imágenes que los distinga) y el texto PPS-4A y PPS-4B, respectivamente. 
+* Los botones deben de ocupar toda la pantalla (TODA LA PANTALLA). Una vez seleccionada el aula (respetar el mismo color del botón de ingreso), se tendrá un cuadro de texto y un botón para ingresar un mensaje. 
+* El listado de mensajes muestra el usuario que lo generó (al estilo Whatsapp). 
+* Los mensajes no pueden tener más de 21 caracteres. Mostrar la fecha y el autor del mensaje. Si el autor del mensaje soy yo, NO mostrar el nombre. Los mensajes propios se alinearán a la derecha, los demás, a la izquierda. 
 
 ![Conversando en el aula](https://github.com/marianomadou/PPS_Entrega/blob/master/documentacion/print_alarma.jpg)
 
 ### 2.- Tabla didáctica de idiomas para niños (5 años): 
-Ingresar un usuario. (registrado en BD) Crear una aplicación que permita seleccionar un tema y un idioma. La aplicación contará con cinco BOTONES que ocupen toda la pantalla. (TODA LA PANTALLA). Se tendrán botones flotantes que permitan seleccionar el idioma deseado. (que posean banderitas) Los idiomas son: Español. Inglés. Portugués. Se tendrán botones que permitan seleccionar el tema deseado. (que posean imágenes alusivas). Los temas son: 
-Colores. Números. Animales. + Los sonidos pueden ser grabados por el usuario (no excluyente, pero suma nota. Si lo 
-graban con acento español, más). + Debe funcionar con el dispositivo tanto en horizontal como en vertical, ajustando los 
-elementos a la pantalla. 
+* Ingresar un usuario. (registrado en BD) 
+* Crear una aplicación que permita seleccionar un tema y un idioma. 
+* La aplicación contará con cinco BOTONES que ocupen toda la pantalla. (TODA LA PANTALLA). 
+* Se tendrán botones flotantes que permitan seleccionar el idioma deseado. (que posean banderitas) 
+* Los idiomas son: 
+    **Español. Inglés. Portugués.** 
+* Se tendrán botones que permitan seleccionar el tema deseado. (que posean imágenes alusivas). 
+* Los temas son: 
+    **Colores. Números. Animales.**
+* + Los sonidos pueden ser grabados por el usuario (no excluyente, pero suma nota. Si lo graban con acento español, más). 
+*+ Debe funcionar con el dispositivo tanto en horizontal como en vertical, ajustando los  elementos a la pantalla. 
 
 ![Conversando en el aula](https://github.com/marianomadou/PPS_Entrega/blob/master/documentacion/print_didactica.jpg)
 
