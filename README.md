@@ -69,8 +69,6 @@ El enfoque va a estar dado por los usuarios de un RESTAURANT, el cual apunta tod
     - cantidad de productos en el pedido.
     - $ precio (cantidad en pedido * precio en producto)
 
-![La Comanda MadouRizzi](https://github.com/marianomadou/PPS_Entrega/blob/master/documentacion/print_comanda7.jpg)
-
 **JUEGOS:**
 
     *LOS USUARIOS PODRAN JUGAR HASTA TANTO NO HAYAN PAGADO (MESA CERRADA).*
