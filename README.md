@@ -41,30 +41,52 @@ Vibraciones al detectarse un error.
 * Los temas son: 
     **Colores. Números. Animales.**
 * + Los sonidos pueden ser grabados por el usuario (no excluyente, pero suma nota. Si lo graban con acento español, más). 
-*+ Debe funcionar con el dispositivo tanto en horizontal como en vertical, ajustando los  elementos a la pantalla. 
+* + Debe funcionar con el dispositivo tanto en horizontal como en vertical, ajustando los  elementos a la pantalla. 
 
 ![Conversando en el aula](https://github.com/marianomadou/PPS_Entrega/blob/master/documentacion/print_didactica.jpg)
 
 ### 3.- Alarma de robo: Ingresar un usuario. (registrado en BD):
 La aplicación tendrá un botón que permitirá activar y desactivar el detector de robo. Una vez activado, (asumiendo que el dispositivo está apoyado horizontalmente sobre una mesa) se va a disparar la alarma: 
-● Al cambiar la posición, a izquierda o a derecha, emitirá un sonido distinto para cada lado. 
-● Al ponerlo vertical, se encenderá la luz (por 5 segundos) y emitirá un sonido. 
-● Al ponerlo horizontal, vibrará (por 5 segundos) y emitirá un sonido. + Grabar los sonidos. Ejemplo: al moverlo hacia la izquierda, “¡Están hurtando el dispositivo!”, al moverlo hacia la derecha “¡Epa! ¿Qué estás por hacer?”. 
+* Al cambiar la posición, a izquierda o a derecha, emitirá un sonido distinto para cada lado. 
+* Al ponerlo vertical, se encenderá la luz (por 5 segundos) y emitirá un sonido. 
+* Al ponerlo horizontal, vibrará (por 5 segundos) y emitirá un sonido. + Grabar los sonidos. Ejemplo: al moverlo hacia la izquierda, “¡Están hurtando el dispositivo!”, al moverlo hacia la derecha “¡Epa! ¿Qué estás por hacer?”. 
 
 ![Conversando en el aula](https://github.com/marianomadou/PPS_Entrega/blob/master/documentacion/print_alarma.jpg)
 
 ### 4.- Relevamiento visual (testeado en más de un dispositivo): 
-Ingresar un usuario. (registrado en BD) Seleccionar un BOTÓN de dos posibles (Cosas LINDAS del edificio, Cosas FEAS del edificio). Los botones deben de ocupar toda la pantalla (TODA LA PANTALLA) y poseer imágenes alusivas. Al ingresar a una sección, nos permite tomar una foto y subirla a la nube. El nombre del usuario tiene que estar relacionado con la foto. Los demás usuarios tienen que ver la foto subida. El listado de fotos se tiene que mostrar ordenado por fecha de forma DESCENDENTE. Permitir votar la cosa más linda y la más fea del edificio (un voto por foto). 
-+ Permitir ver los resultados en gráficos de torta (para las lindas) y de barra (para las feas). + Permitir subir más de una foto a la vez. + Mostrar el listado de las fotos que el usuario subió. + Al seleccionar un resultado del gráfico, mostrar la foto correspondiente. 
+* Ingresar un usuario. (registrado en BD) 
+* Seleccionar un BOTÓN de dos posibles (Cosas LINDAS del edificio, Cosas FEAS del edificio). 
+* Los botones deben de ocupar toda la pantalla (TODA LA PANTALLA) y poseer imágenes alusivas. 
+* Al ingresar a una sección, nos permite tomar una foto y subirla a la nube. 
+* El nombre del usuario tiene que estar relacionado con la foto. 
+* Los demás usuarios tienen que ver la foto subida. 
+* El listado de fotos se tiene que mostrar ordenado por fecha de forma DESCENDENTE. 
+* Permitir votar la cosa más linda y la más fea del edificio (un voto por foto). 
+* Permitir ver los resultados en gráficos de torta (para las lindas) y de barra (para las feas). 
+* Permitir subir más de una foto a la vez. 
+* Mostrar el listado de las fotos que el usuario subió. 
+* Al seleccionar un resultado del gráfico, mostrar la foto correspondiente. 
 
 ![Conversando en el aula](https://github.com/marianomadou/PPS_Entrega/blob/master/documentacion/print_visual.jpg)
 
 ### 5.- Visualizador kinético: 
-Ingresar un usuario. (registrado en BD) Seleccionar un BOTÓN de dos posibles (Cosas LINDAS del edificio, Cosas FEAS del edificio). Los botones deben de ocupar toda la pantalla (TODA LA PANTALLA) y poseer imágenes alusivas. Al ingresar a una sección, nos permite tomar una foto y subirla a la nube. El nombre del usuario tiene que estar relacionado con la foto. Los demás usuarios tienen que ver la foto subida. El listado de fotos se tiene que mostrar de forma DESCENDENTE. Permitir subir más de una foto a la vez. Mostrar el listado de las fotos que el usuario subió. Permitir votar la cosa más linda y la más fea del edificio (un voto por foto). Permitir ver los resultados en gráficos de torta (para las lindas) y de barra (para las feas). Al seleccionar un resultado del gráfico, mostrar la foto correspondiente. 
-En la galería de fotos: 
-● Al mover el celular hacia la derecha, mostrar la siguiente fotografía. 
-● Al mover el celular hacia la izquierda, a la foto anterior. 
-● Al hacer otro movimiento (usted lo determinará) se vuelve al principio. 
+* Ingresar un usuario. (registrado en BD) 
+* Seleccionar un BOTÓN de dos posibles (Cosas LINDAS del edificio, Cosas FEAS del edificio). 
+* Los botones deben de ocupar toda la pantalla (TODA LA PANTALLA) y poseer imágenes alusivas. 
+* Al ingresar a una sección, nos permite tomar una foto y subirla a la nube. 
+* El nombre del usuario tiene que estar relacionado con la foto. 
+* Los demás usuarios tienen que ver la foto subida. 
+* El listado de fotos se tiene que mostrar de forma DESCENDENTE. 
+* Permitir subir más de una foto a la vez. 
+* Mostrar el listado de las fotos que el usuario subió. 
+* Permitir votar la cosa más linda y la más fea del edificio (un voto por foto). 
+* Permitir ver los resultados en gráficos de torta (para las lindas) y de barra (para las feas). 
+* Al seleccionar un resultado del gráfico, mostrar la foto correspondiente. 
+
+**En la galería de fotos:**
+* Al mover el celular hacia la derecha, mostrar la siguiente fotografía. 
+* Al mover el celular hacia la izquierda, a la foto anterior. 
+* Al hacer otro movimiento (usted lo determinará) se vuelve al principio. 
 
 ![Conversando en el aula](https://github.com/marianomadou/PPS_Entrega/blob/master/documentacion/print_kinectico.jpg)
 
