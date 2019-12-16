@@ -1,20 +1,23 @@
-# PPS_Entrega
+# Práctica Profesional Supervisada - UTN - Prof. Octavio Villegas
+## 2do Cuatrimestre de 2019
 
-## Objetivos:
+## La Comanda - IONIC 4
+
+### Objetivos:
 Lograr una aplicación utilizando el hardware del dispositivo móvil para la gestión de información, enfocada en la experiencia de usuario.
 
 El enfoque va a estar dado por los usuarios de un RESTAURANT, el cual apunta todos sus esfuerzos en mejorar la utilización de su servicio por medio de una aplicación para celulares.
 
 ![La Comanda MadouRizzi](https://github.com/marianomadou/PPS_Entrega/blob/master/documentacion/print_comanda.jpg)
 
-## PROCESO:
+### PROCESO:
 **Ingresa cliente al restaurant**
     -Solicita una mesa
     -Solicita una reserva
 
 ![La Comanda MadouRizzi](https://github.com/marianomadou/PPS_Entrega/blob/master/documentacion/print_comanda2.jpg)
 
-## FUNCIONALIDADES
+### FUNCIONALIDADES
 **MESA:**
     - AL SCANEAR MESA ASIGNADA POR MOZO EL CLIENTE UTLIZARA LECTOR QR PARA TOMAR LA MISMA
     -VALIDARA: 
